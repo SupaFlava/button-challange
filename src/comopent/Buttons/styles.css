@@ -1,0 +1,12 @@
+button{
+    display: block;
+    color: #47E5BC;
+    font-size: 5px;
+    padding: .5rem 2.5rem;
+    margin: 10px auto;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    text-transform: uppercase;
+    border-radius: 5px
+}

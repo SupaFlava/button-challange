@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Button from "./button";
+import Button from "./Buttons/button";
+import Input from "./Input/input";
+import InputLabel from "./Label/inputLabel";
 
 function ButtonProfile() {
-  const PRIMARY = "primary";
   const [pickStyle, setPickStyle] = useState("");
   function handleClick(e) {
     setPickStyle(e.target.innerText.toLowerCase());
@@ -27,7 +28,9 @@ function ButtonProfile() {
           Danger
         </li>
       </ul>
-      <Button style={pickStyle} />
+      <Button variant={pickStyle}>hello</Button>
+      <InputLabel inputName={pickStyle} inputId={23} />
+      <Input inputId={23} variant={pickStyle} name={pickStyle}></Input>
     </div>
   );
 }
