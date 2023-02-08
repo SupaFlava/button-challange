@@ -1,7 +1,7 @@
 import React from "react";
-
-function HeaderText({ variant, text, ...props }) {
-  return <h2 className={variant}>{text}</h2>;
+import styles from "./HeaderText.module.css";
+function HeaderText({ variant, children, ...props }) {
+  return <h2 className={styles[variant]}>{children}</h2>;
 }
 
 export default HeaderText;

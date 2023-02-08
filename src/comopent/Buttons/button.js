@@ -1,7 +1,8 @@
 import React from "react";
-function Button({ variant, className, children, ...props }) {
+import styles from "./Button.module.css";
+function Button({ variant, children, ...props }) {
   return (
-    <button className={`btn ${variant} `} {...props}>
+    <button className={styles[variant]} {...props}>
       {children}
     </button>
   );

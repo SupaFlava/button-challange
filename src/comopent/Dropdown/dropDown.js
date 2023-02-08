@@ -1,11 +1,12 @@
 import React from "react";
+import styles from "./DropDown.module.css";
 
-function DropDown({ data, value, ...props }) {
+function DropDown({ children, value, ...props }) {
   return (
-    <select>
-      {data.map((d, index) => (
+    <select className={styles}>
+      {children.map((child, index) => (
         <option key={index} value={value}>
-          {d.label}
+          {child.label}
         </option>
       ))}
     </select>

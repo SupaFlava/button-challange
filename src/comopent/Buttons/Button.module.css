@@ -1,4 +1,4 @@
-button{
+.btn_primary{
     display: block;
     color: #47E5BC;
     font-size: 5px;
@@ -9,4 +9,7 @@ button{
     line-height: 1.5;
     text-transform: uppercase;
     border-radius: 5px
+}
+.btn_danger{
+    background-color: rebeccapurple;
 }

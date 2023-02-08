@@ -1,8 +1,4 @@
-import "./App.css";
-import ButtonProfile from "./comopent/buttonProfile";
-import DropDown from "./comopent/Dropdown/dropDown";
-import Input from "./comopent/Input/input";
-import FormContainer from "./comopent/Form/formContainer";
+import FormContainer from "./comopent/Form/FormContainer";
 
 const options = [
   { label: "Location 1", value: 1 },
@@ -20,7 +16,7 @@ const options = [
 function App() {
   return (
     <div className="App">
-      <FormContainer data={options} />
+      <FormContainer variant={""}>{options}</FormContainer>
     </div>
   );
 }

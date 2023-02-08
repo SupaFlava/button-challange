@@ -1,15 +1,9 @@
 import React from "react";
+import styles from "./Input.module.css";
 
-function Input({ variant, inputName, inputId, inputType, ...props }) {
+function Input({ variant, children, ...props }) {
   return (
-    <input
-      name={inputName}
-      id={inputId}
-      type={inputType}
-      className={variant}
-      placeholder="default text"
-      {...props}
-    />
+    <input className={styles[variant]} {...props} placeholder={children} />
   );
 }
 

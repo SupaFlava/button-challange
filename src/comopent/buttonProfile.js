@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Button from "./Buttons/button";
-import Input from "./Input/input";
-import InputLabel from "./Label/inputLabel";
+import Button from "./Buttons/Button";
+import Input from "./Input/Input";
+import InputLabel from "./Label/InputLabel";
 
 function ButtonProfile() {
   const [pickStyle, setPickStyle] = useState("");
